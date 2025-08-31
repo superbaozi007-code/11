@@ -1,3 +1,4 @@
+```mermaid
 graph LR
   %% 节点定义
   M[宅宅魅魔 Vivi]

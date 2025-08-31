@@ -25,7 +25,7 @@ graph LR
   %% 样式定义
   classDef friendly stroke:#2ecc71,color:#2ecc71;
   classDef enemy stroke:#e74c3c,color:#e74c3c;
-  classDef char fill:#d6eaff,stroke:#2980b9,color:#000,font-weight:bold;
+  
 
   %% 应用角色样式
   class M,A,D,C,W,R,V,E char;

@@ -22,18 +22,27 @@ graph LR
   W -->|默默follow偶像| D:::friendly
   C -->|看历史美食直播| V:::friendly
 
-  %% 样式定义
-  classDef friendly stroke:#2ecc71,color:#2ecc71;
-  classDef enemy stroke:#e74c3c,color:#e74c3c;
+  %% 角色样式
   classDef char fill:#d6eaff,stroke:#2980b9,color:#000,font-weight:bold;
-  
-
-  %% 应用角色样式
   class M,A,D,C,W,R,V,E char;
+
+  %% 线条颜色
+  linkStyle 0 stroke:#2ecc71,color:#2ecc71;  %% R-M 友好
+  linkStyle 1 stroke:#2ecc71,color:#2ecc71;  %% D-R 友好
+  linkStyle 2 stroke:#e91e63,color:#e91e63;  %% D-W 暧昧
+  linkStyle 3 stroke:#e74c3c,color:#e74c3c;  %% W-V 敌对
+  linkStyle 4 stroke:#2ecc71,color:#2ecc71;  %% M-V 友好
+  linkStyle 5 stroke:#2ecc71,color:#2ecc71;  %% A-C 友好
+  linkStyle 6 stroke:#2ecc71,color:#2ecc71;  %% A-V 友好
+  linkStyle 7 stroke:#2ecc71,color:#2ecc71;  %% C-E 友好
+  linkStyle 8 stroke:#e91e63,color:#e91e63;  %% E-V 暧昧
 
   %% 图例
   subgraph Legend[图例 Legend]
-    F[友好关系]:::friendly
-    H[暧昧关系]:::ambiguous
-    X[敌对关系]:::enemy
+    F[友好关系]:::char
+    H[暧昧关系]:::char
+    X[敌对关系]:::char
   end
+  linkStyle 9 stroke:#2ecc71,color:#2ecc71;
+  linkStyle 10 stroke:#e91e63,color:#e91e63;
+  linkStyle 11 stroke:#e74c3c,color:#e74c3c;

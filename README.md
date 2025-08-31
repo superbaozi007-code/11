@@ -1,25 +1,25 @@
 ```mermaid
 graph LR
   %% 节点定义
-  M[魅魔 Mira]
-  A[天使 Seraphina]
-  D[小恶魔 Vivi]
-  C[猫猫 Neko]
-  W[狼人 Selene]
-  R[蟑螂忍者 Kuroko]
-  V[吸血鬼 Camille]
-  E[精灵 Evelyn]
+M[宅宅魅魔 Vivi]
+A[大天使 Lin]
+D[小恶魔 Kokoro]
+C[猫咪 Nyao]
+W[狼人 Ravena]
+R[蟑螂忍者 Kuro]
+V[吸血鬼 Lilith]
+E[精灵 Faye]
 
   %% 关系连线（带编号）
-  R -->|送快递| M
-  D ---|杀手搭档| R
-  D -->|喜欢的偶像| W
-  W -->|宿敌未认出| V
-  M -->|看直播·聊二次元| V
-  A ---|酒吧同事| C
-  A ---|打游戏认识·偶尔双排| V
-  C -->|厨房互助| E
-  E ---|心事对象| V
+R -->|送快递 Delivery service| M:::friendly
+D ---|杀手搭档 Assassin partners| R:::friendly
+R -->|喜欢的偶像 Idol| W:::friendly
+W -->|宿敌未认出 Rival | V:::enemy
+M -->|看直播·聊二次元 Watching stream & chat anime| V:::friendly
+A ---|酒吧同事 Colleague at bar| C:::friendly
+A ---|打游戏认识·偶尔双排 Partners for online game| E:::friendly
+W -->|默默follow偶像 Follow idol secretly|
+D:::friendly C -->|看历史美食直播 Watching stream for food history| V:::friendly
 
   %% 角色样式
   classDef char fill:#d6eaff,stroke:#2980b9,color:#000,font-weight:bold;
